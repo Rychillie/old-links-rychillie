@@ -1,17 +1,11 @@
 import React from "react"
-
-import "./layout.css"
+import { GlobalStyle } from "../styles/GlobalStyle"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `94%`,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
+      <GlobalStyle />
+      <div>
         <main>{children}</main>
       </div>
     </>

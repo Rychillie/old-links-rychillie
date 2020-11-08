@@ -25,7 +25,15 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 700;
     }
 
-    button {
+    button, a {
         cursor: pointer;
+    }
+
+    html, body, #___gatsby, #gatsby-focus-wrapper {
+        display: block;
+        position: static;
+        padding: 0;
+        width: 100%;
+        height: 100%;
     }
 `

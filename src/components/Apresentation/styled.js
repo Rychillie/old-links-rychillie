@@ -2,10 +2,14 @@ import styled from "styled-components"
 
 export const Header = styled.header`
   display: flex;
-  flex: 1;
+  flex: 2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 991px) {
+    flex: 1;
+  }
 `
 
 export const Content = styled.div`

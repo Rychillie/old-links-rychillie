@@ -12,16 +12,18 @@ const IndexPage = () => (
     <SEO title="Brazilian Frontend Developer" />
     <Apresentation />
     <S.Content>
-      <S.Container>
-        {JSONData.content.map((data, index) => {
-          return (
-            <a key={`content_item_${index}`} href={`${data.link}`}>
-              <h3>{data.title}</h3>
-              <p>{data.text}</p>
-            </a>
-          )
-        })}
-      </S.Container>
+      <S.Cards>
+        <S.Container>
+          {JSONData.content.map((data, index) => {
+            return (
+              <a key={`content_item_${index}`} href={`${data.link}`}>
+                <h3>{data.title}</h3>
+                <p>{data.text}</p>
+              </a>
+            )
+          })}
+        </S.Container>
+      </S.Cards>
     </S.Content>
   </Layout>
 )

@@ -14,12 +14,16 @@ export const Content = styled.div`
   }
 `
 
+export const Cards = styled.div`
+  width: 100%;
+`
+
 export const Container = styled.div`
   display: flex;
   padding: 7%;
-  flex-direction: row;
   width: 100%;
   overflow-x: scroll;
+  flex-direction: row;
   scroll-snap-type: x mandatory;
 
   @media screen and (min-width: 991px) {
@@ -27,11 +31,17 @@ export const Container = styled.div`
     overflow-x: unset;
   }
 
+  &:after {
+    content: "";
+    padding-right: 7%;
+  }
+
   a {
     scroll-snap-align: center;
     display: flex;
     margin: 2%;
     min-width: 96%;
+    min-height: 200px;
     padding: 1.5rem;
     text-decoration: none;
     color: white;
@@ -41,8 +51,12 @@ export const Container = styled.div`
     background-color: rgba(255, 255, 255, 0.05);
     border: 2px solid transparent;
 
+    &:first-child {
+      margin-left: 0;
+    }
+
     &:last-child {
-      margin-right: 1.5rem;
+      margin-right: 0;
     }
 
     &:hover {

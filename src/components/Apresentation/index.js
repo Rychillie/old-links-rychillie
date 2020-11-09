@@ -15,21 +15,7 @@ import * as S from "./styled"
 const Apresentation = () => {
   const data = useStaticQuery(graphql`
     query {
-      mobileImage: file(relativePath: { eq: "rychillie.png" }) {
-        childImageSharp {
-          fixed(width: 125, quality: 100) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      tabletImage: file(relativePath: { eq: "rychillie.png" }) {
-        childImageSharp {
-          fixed(width: 160, quality: 100) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      desktopImage: file(relativePath: { eq: "rychillie.png" }) {
+      file(relativePath: { eq: "rychillie.png" }) {
         childImageSharp {
           fixed(width: 240, quality: 100) {
             ...GatsbyImageSharpFixed
@@ -39,23 +25,11 @@ const Apresentation = () => {
     }
   `)
 
-  const sources = [
-    {
-      ...data.desktopImage.childImageSharp.fixed,
-      media: `(min-width: 991px)`,
-    },
-    {
-      ...data.tabletImage.childImageSharp.fixed,
-      media: `(min-width: 479px)`,
-    },
-    data.mobileImage.childImageSharp.fixed,
-  ]
-
   return (
     <S.Header>
       <S.Content>
         <S.Image>
-          <Img fixed={sources} />
+          <Img fixed={data.file.childImageSharp.fixed} />
         </S.Image>
         <h1>Hey, I'm Rychillie FrontEnd Developer and Content Creator.</h1>
         <S.Social>

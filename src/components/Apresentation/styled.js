@@ -4,7 +4,7 @@ export const Header = styled.header`
   display: flex;
   flex: 3;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 
   @media screen and (min-width: 991px) {
@@ -46,9 +46,11 @@ export const Content = styled.div`
 `
 
 export const Image = styled.div`
-  width: fit-content;
+  width: 240px;
+  height: 240px;
   border-radius: 12px;
   overflow: hidden;
+  margin-right: auto;
 
   @media screen and (min-width: 479px) {
     border-radius: 14px;

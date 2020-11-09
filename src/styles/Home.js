@@ -10,7 +10,7 @@ export const Content = styled.div`
 
   @media screen and (min-width: 991px) {
     justify-content: center;
-    flex: 1;
+    flex: 3;
   }
 `
 
@@ -23,6 +23,7 @@ export const Container = styled.div`
   padding: 7%;
   width: 100%;
   overflow-x: scroll;
+  overflow-y: unset;
   flex-direction: row;
   scroll-snap-type: x mandatory;
 
@@ -70,7 +71,16 @@ export const Container = styled.div`
 
     @media screen and (min-width: 991px) {
       border-radius: 16px;
+      min-width: 46%;
       width: 46%;
+
+      &:first-child {
+        margin-left: 2%;
+      }
+
+      &:last-child {
+        margin-right: 2%;
+      }
     }
 
     h3 {

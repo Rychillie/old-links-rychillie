@@ -8,7 +8,8 @@ export const Header = styled.header`
   align-items: center;
 
   @media screen and (min-width: 991px) {
-    flex: 1;
+    justify-content: center;
+    flex: 2;
   }
 `
 

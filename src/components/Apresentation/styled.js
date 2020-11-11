@@ -47,17 +47,21 @@ export const Content = styled.div`
 `
 
 export const Image = styled.div`
-  width: 240px;
-  height: 240px;
+  width: 160px;
+  height: 160px;
   border-radius: 12px;
   overflow: hidden;
   margin-right: auto;
 
   @media screen and (min-width: 479px) {
+    width: 180px;
+    height: 180px;
     border-radius: 14px;
   }
 
   @media screen and (min-width: 991px) {
+    width: 240px;
+    height: 240px;
     border-radius: 16px;
   }
 `

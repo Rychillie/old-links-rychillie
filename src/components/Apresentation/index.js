@@ -17,8 +17,8 @@ const Apresentation = () => {
     query {
       file(relativePath: { eq: "rychillie.png" }) {
         childImageSharp {
-          fixed(width: 240, quality: 100) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 240, maxHeight: 240, quality: 100) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -29,7 +29,7 @@ const Apresentation = () => {
     <S.Header>
       <S.Content>
         <S.Image>
-          <Img fixed={data.file.childImageSharp.fixed} />
+          <Img fluid={data.file.childImageSharp.fluid} />
         </S.Image>
         <h1>Hey, I'm Rychillie FrontEnd Developer and Content Creator.</h1>
         <S.Social>

@@ -7,6 +7,10 @@ export const Header = styled.header`
   justify-content: flex-end;
   align-items: center;
 
+  @media screen and (min-height: 660px) {
+    justify-content: flex-end;
+  }
+
   @media screen and (min-width: 991px) {
     justify-content: center;
     flex: 2;
@@ -36,6 +40,14 @@ export const Content = styled.div`
     margin-left: 0;
     margin-right: 0;
 
+    @media screen and (min-height: 720px) {
+      font-size: 1.8rem;
+    }
+
+    @media screen and (min-height: 800px) {
+      font-size: 2rem;
+    }
+
     @media screen and (min-width: 479px) {
       font-size: 1.8rem;
     }
@@ -47,11 +59,28 @@ export const Content = styled.div`
 `
 
 export const Image = styled.div`
-  width: 160px;
-  height: 160px;
+  margin-top: 20px;
+  width: 140px;
+  height: 140px;
   border-radius: 12px;
   overflow: hidden;
   margin-right: auto;
+
+  @media screen and (min-height: 568px) {
+    margin-top: 40px;
+  }
+
+  @media screen and (min-height: 660px) {
+    width: 180px;
+    height: 180px;
+    border-radius: 14px;
+  }
+
+  @media screen and (min-height: 800px) {
+    width: 240px;
+    height: 240px;
+    border-radius: 16px;
+  }
 
   @media screen and (min-width: 479px) {
     width: 180px;

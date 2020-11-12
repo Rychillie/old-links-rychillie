@@ -9,6 +9,10 @@ export const Content = styled.div`
   overflow: hidden;
   height: fit-content;
 
+  @media screen and (min-height: 660px) {
+    justify-content: center;
+  }
+
   @media screen and (min-width: 991px) {
     justify-content: center;
     flex: 3;
@@ -78,6 +82,16 @@ export const Container = styled.div`
       border: 2px solid rgba(255, 255, 255, 0.05);
     }
 
+    @media screen and (min-height: 568px) {
+      padding: 1.2rem;
+    }
+
+    @media screen and (min-height: 620px) {
+      padding: 1.5rem;
+      min-height: 180px;
+      border-radius: 16px;
+    }
+
     @media screen and (min-width: 479px) {
       border-radius: 14px;
       min-height: 120px;
@@ -104,6 +118,14 @@ export const Container = styled.div`
       margin: 0 0 1rem 0;
       font-size: 1rem;
 
+      @media screen and (min-height: 568px) {
+        font-size: 1.2rem;
+      }
+
+      @media screen and (min-height: 620px) {
+        font-size: 1.5rem;
+      }
+
       @media screen and (min-width: 479px) {
         font-size: 1.2rem;
       }
@@ -118,6 +140,16 @@ export const Container = styled.div`
       color: rgb(255 255 255 / 65%);
       font-size: 0.8rem;
       line-height: 1rem;
+
+      @media screen and (min-height: 568px) {
+        font-size: 1rem;
+        line-height: 1.2rem;
+      }
+
+      @media screen and (min-height: 620px) {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+      }
 
       @media screen and (min-width: 479px) {
         font-size: 1rem;

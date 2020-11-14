@@ -21,6 +21,12 @@ export const Content = styled.div`
 
 export const Cards = styled.div`
   width: 100%;
+
+  @media screen and (min-width: 991px) {
+    max-height: 100vh;
+    flex-wrap: wrap;
+    overflow-y: auto;
+  }
 `
 
 export const Container = styled.div`

@@ -9,7 +9,7 @@ import * as S from "../styles/Home"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Brazilian Frontend Developer" />
+    <SEO title="Desenvolvedor Frontend e UX/UI Designer" />
     <Apresentation />
     <S.Content>
       <S.Cards>

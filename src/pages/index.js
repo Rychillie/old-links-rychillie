@@ -1,5 +1,5 @@
 import React from "react"
-import JSONData from "../content/content.json"
+import Content from "../content/content"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -14,14 +14,12 @@ const IndexPage = () => (
     <S.Content>
       <S.Cards>
         <S.Container>
-          {JSONData.content.map((data, index) => {
-            return (
-              <a key={`content_item_${index}`} href={`${data.link}`}>
-                <h3>{data.title}</h3>
-                <p>{data.text}</p>
-              </a>
-            )
-          })}
+          {Content.map(item => (
+            <a key={item.id} href={`${item.link}`}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </a>
+          ))}
         </S.Container>
       </S.Cards>
     </S.Content>

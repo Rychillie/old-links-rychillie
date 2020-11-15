@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import Social from "../../content/social.js"
+import Social from "../../content/social"
 
 import * as S from "./styled"
 

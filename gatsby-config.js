@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Rychillie`,
-    description: `A young Frontend developer who wants to share his knowledge. Always looking to evolve and improve in all aspects.`,
+    description: `Um jovem desenvolvedor Frontend que deseja compartilhar seus conhecimentos. Buscando sempre evoluir e melhorar em todos os aspectos.`,
+    image: `src/images/rychillie.png`,
     author: `@rychillie`,
   },
   plugins: [

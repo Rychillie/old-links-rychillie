@@ -1,29 +1,28 @@
-import React from "react"
-
 const Content = [
   {
     title: "Newsletter",
-    text: "Receive exclusive content every week in your inbox.",
+    text: "Receba um conteúdo exclusivo toda semana na sua caixa de e-mail.",
     link: "https://newsletter.rychillie.net",
   },
   {
-    title: "Work",
-    text: "Discover my portfolio and learn more about my career.",
+    title: "Portfólio",
+    text: "Conheça meu portfólio e um pouco mais sobre minha carreira.",
     link: "https://work.rychillie.net",
   },
   {
     title: "Twitch",
-    text: "A place that I teach, learn and share my personal projects.",
+    text:
+      "O lugar onde ensino, aprendo e compartilho meus projetos pessoais Ao Vivo.",
     link: "https://twich.tv/rychillie",
   },
   {
     title: "YouTube",
-    text: "Place where I share my knowledge and do technology analysis.",
+    text: "Lugar onde compartilho conhecimento e analises de tecnologias.",
     link: "https://youtube.com/rychillie",
   },
   {
-    title: "About",
-    text: "Know a little more about me and my goal",
+    title: "Sobre",
+    text: "Conheça um pouco mais sobre mim, meus sonhos e objetivos.",
     link: "/about",
   },
 ]

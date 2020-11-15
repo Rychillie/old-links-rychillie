@@ -11,7 +11,7 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
     <div className="errorPage">
       <div className="row">
-        <h1>404: What the hell this page was Not Found</h1>
+        <h1>404: Que vigarice! Esta pagina não foi encontrada!</h1>
         <img src={Mutley} alt="Cachorrinho engraçado rindo" />
       </div>
       <Link to="/">Voltar ao inicio</Link>

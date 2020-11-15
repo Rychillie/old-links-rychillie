@@ -44,4 +44,62 @@ export const GlobalStyle = createGlobalStyle`
         min-width: -webkit-fill-available;
         min-height: -webkit-fill-available;
     }
+    .errorPage {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+
+        .row {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            padding: 100px 30px;
+
+            @media screen and (min-width: 991px) {
+                flex-direction: row;
+            }
+
+            h1 {
+                max-width: 400px;
+                width: 100%;
+                margin-bottom: 60px;
+                margin-right: 0px;
+
+                @media screen and (min-width: 991px) {
+                    margin-right: 30px;
+                    margin-bottom: 0;
+                }
+            }
+
+            img {
+                max-width: 200px;
+                max-height: 280px;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        > a {
+            display: flex;
+            width: fit-content;
+            padding: 10px 20px;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            background: #fff;
+            color: #111;
+            margin: 0 auto;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            border: 2px solid #fff;
+
+            &:hover {
+                color: #fff;
+                background: #111;
+            }
+        }
+    }
 `

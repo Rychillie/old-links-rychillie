@@ -36,7 +36,7 @@ export const Content = styled.div`
     line-height: 121%;
     font-size: 1.4rem;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-left: 0;
     margin-right: 0;
 
@@ -54,6 +54,33 @@ export const Content = styled.div`
 
     @media screen and (min-width: 991px) {
       font-size: 2rem;
+    }
+  }
+
+  h2 {
+    color: #fff;
+    line-height: 120%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    @media screen and (min-height: 568px) {
+      font-size: 1.3rem;
+    }
+
+    @media screen and (min-height: 620px) {
+      font-size: 1.6rem;
+    }
+
+    @media screen and (min-width: 479px) {
+      font-size: 1.3rem;
+    }
+
+    @media screen and (min-width: 991px) {
+      font-size: 1.6rem;
     }
   }
 `

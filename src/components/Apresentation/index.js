@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Social from "../../content/social"
+import Gif from "../../images/hello.gif"
 
 import * as S from "./styled"
 
@@ -25,13 +26,7 @@ const Apresentation = () => {
           <Img fluid={data.file.childImageSharp.fluid} />
         </S.Image>
         <h1>
-          Olá{" "}
-          <img
-            src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"
-            width="30px"
-            alt="hello icon"
-          />
-          , Eu sou Rychillie
+          Olá <img src={Gif} width="30px" alt="hello icon" />, Eu sou Rychillie
         </h1>
         <h2>Desenvolvedor FrontEnd e Criador de Conteúdo.</h2>
         <S.Social>
@@ -41,6 +36,7 @@ const Apresentation = () => {
               href={`${item.link}`}
               title={`${item.title}`}
               target="_blank"
+              rel="noreferrer"
             >
               {item.icon}
             </S.MyLink>

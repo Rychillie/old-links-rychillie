@@ -24,7 +24,16 @@ const Apresentation = () => {
         <S.Image>
           <Img fluid={data.file.childImageSharp.fluid} />
         </S.Image>
-        <h1>Olá, Eu sou Rychillie FrontEnd Developer e Criador de Conteúdo.</h1>
+        <h1>
+          Olá{" "}
+          <img
+            src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"
+            width="30px"
+            alt="hello icon"
+          />
+          , Eu sou Rychillie
+        </h1>
+        <h2>Desenvolvedor FrontEnd e Criador de Conteúdo.</h2>
         <S.Social>
           {Social.map(item => (
             <S.MyLink

@@ -10,7 +10,7 @@ const Content = [
     link: "https://blog.rychillie.net",
   },
   {
-    title: "Coursos",
+    title: "Cursos",
     text: "Espaço de cursos e tutoriais que produzi e publiquei.",
     link: "https://cursos.rychillie.net",
   },

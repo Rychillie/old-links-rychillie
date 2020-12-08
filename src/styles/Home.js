@@ -71,8 +71,9 @@ export const Container = styled.div`
     padding: 1rem;
     overflow: hidden;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 2px solid transparent;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     min-height: 100px;
 
     &:first-child {

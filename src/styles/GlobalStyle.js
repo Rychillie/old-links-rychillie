@@ -15,7 +15,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: #111;
+        background-color: #171717;
+        background-image: linear-gradient(315deg,#202830 0%,#171717 74%);
+        backdrop-filter: blur(10px);
         color: #fff;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;

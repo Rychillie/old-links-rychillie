@@ -15,7 +15,7 @@ const IndexPage = () => (
       <S.Cards>
         <S.Container>
           {Content.map(item => (
-            <a key={item.id} href={`${item.link}`}>
+            <a key={item.title} href={`${item.link}`}>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
             </a>

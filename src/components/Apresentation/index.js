@@ -32,7 +32,7 @@ const Apresentation = () => {
         <S.Social>
           {Social.map(item => (
             <S.MyLink
-              key={item.id}
+              key={item.title}
               href={`${item.link}`}
               title={`${item.title}`}
               target="_blank"

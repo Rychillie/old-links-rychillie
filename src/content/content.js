@@ -21,7 +21,7 @@ const Content = [
     title: "Portfólio",
     text: "Conheça meu portfólio e um pouco mais sobre minha carreira.",
     link: "https://work.rychillie.net",
-    hidden: false,
+    hidden: true,
   },
   {
     title: "Promo",

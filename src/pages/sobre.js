@@ -130,7 +130,7 @@ const SobrePage = () => {
             </form>
           </S.Contato>
           <S.Footer>
-            <p className="copy">© 2020 - Rychillie.</p>
+            <p className="copy">© 2021 - Rychillie.</p>
           </S.Footer>
         </S.Container>
       </S.Content>

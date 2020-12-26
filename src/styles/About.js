@@ -114,11 +114,18 @@ export const Image = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  max-width: 320px;
-  max-height: 320px;
+  max-width: 210px;
+  max-height: 210px;
   margin-right: 0;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   z-index: 5;
+
+  @media screen and (min-width: 991px) {
+    margin-top: 0;
+    max-width: 320px;
+    max-height: 320px;
+  }
 
   @media screen and (min-width: 1280px) {
     margin-right: 40px;
@@ -176,11 +183,20 @@ export const Contato = styled.div`
           width: 49%;
         }
       }
+
+      & + input {
+        margin-top: 4%;
+
+        @media screen and (min-width: 991px) {
+          margin-top: 2%;
+          margin-top: 0;
+        }
+      }
     }
 
     textarea {
       resize: vertical;
-      min-height: 120px;
+      min-height: 140px;
     }
 
     input,
@@ -210,14 +226,14 @@ export const Contato = styled.div`
       padding: 16px;
       border-radius: 12px;
       border: 2px solid transparent;
+      text-transform: uppercase;
+      font-weight: 700;
+      background: #0dac50;
+      color: #fff;
       width: 100%;
 
       @media screen and (min-width: 479px) {
         width: 140px;
-        text-transform: uppercase;
-        font-weight: 700;
-        background: #0dac50;
-        color: #fff;
       }
 
       &:hover {
@@ -230,16 +246,21 @@ export const Contato = styled.div`
 
       &.details {
         flex-direction: column;
-        margin-bottom: 2%;
+        margin-bottom: 4%;
 
         @media screen and (min-width: 991px) {
+          margin-bottom: 2%;
           flex-direction: row;
           justify-content: space-between;
         }
       }
 
       &.textarea {
-        margin-bottom: 2%;
+        margin-bottom: 4%;
+
+        @media screen and (min-width: 991px) {
+          margin-bottom: 2%;
+        }
       }
     }
   }
@@ -247,6 +268,7 @@ export const Contato = styled.div`
 
 export const Footer = styled.footer`
   margin-top: 40px;
+  margin-bottom: 60px;
   text-align: center;
 `
 

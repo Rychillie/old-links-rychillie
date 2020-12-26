@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
     }
 
-    body, input, button {
+    body, input, button, textarea {
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
             Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         font-size: 16px;
@@ -125,5 +125,9 @@ export const GlobalStyle = createGlobalStyle`
 
     p {
         font-size: calc(1rem * var(--scale));
+
+        &.copy {
+            font-size: calc(.7rem * var(--scale));
+        }
     }
 `

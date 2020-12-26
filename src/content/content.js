@@ -33,7 +33,7 @@ const Content = [
     title: "Twitch",
     text:
       "O lugar onde ensino, aprendo e compartilho meus projetos pessoais Ao Vivo.",
-    link: "https://twich.tv/rychillie",
+    link: "https://twitch.tv/rychillie",
     hidden: false,
   },
   {

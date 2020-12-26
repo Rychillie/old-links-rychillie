@@ -3,14 +3,37 @@ import styled from "styled-components"
 export const Main = styled.main`
   display: flex;
   flex-direction: column;
-  flex: 1;
-  width: 100%;
   height: 100%;
-  min-height: -webkit-fill-available;
-  max-height: 100vh;
-  overflow: hidden;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  header {
+    flex: none !important;
+  }
 
   @media screen and (min-width: 991px) {
-    flex-direction: row;
+    width: 75%;
+    max-width: 70rem;
+
+    header {
+      flex: none !important;
+
+      > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 40px;
+
+        .imageContainer {
+          margin-top: 0 !important;
+        }
+
+        .content {
+          flex: 1;
+          margin-left: 60px;
+        }
+      }
+    }
   }
 `

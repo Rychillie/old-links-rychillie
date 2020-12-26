@@ -1,8 +1,9 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
-import Social from "../../content/social"
 import Gif from "../../images/hello.gif"
+
+import Social from "../../content/social"
 
 import * as S from "./styled"
 
@@ -22,26 +23,29 @@ const Apresentation = () => {
   return (
     <S.Header>
       <S.Content>
-        <S.Image>
+        <S.Image className="imageContainer">
           <Img fluid={data.file.childImageSharp.fluid} />
         </S.Image>
-        <h1>
-          Olá <img src={Gif} width="30px" alt="hello icon" />, Eu sou Rychillie
-        </h1>
-        <h2>Desenvolvedor FrontEnd e Criador de Conteúdo.</h2>
-        <S.Social>
-          {Social.map(item => (
-            <S.MyLink
-              key={item.title}
-              href={`${item.link}`}
-              title={`${item.title}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {item.icon}
-            </S.MyLink>
-          ))}
-        </S.Social>
+        <div className="content">
+          <h1>
+            Olá <img src={Gif} width="30px" alt="hello icon" />, Eu sou
+            Rychillie
+          </h1>
+          <h2>Desenvolvedor FrontEnd e Criador de Conteúdo.</h2>
+          <S.Social>
+            {Social.map(item => (
+              <S.MyLink
+                key={item.title}
+                href={`${item.link}`}
+                title={`${item.title}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {item.icon}
+              </S.MyLink>
+            ))}
+          </S.Social>
+        </div>
       </S.Content>
     </S.Header>
   )

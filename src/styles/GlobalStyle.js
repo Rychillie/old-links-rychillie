@@ -12,6 +12,8 @@ export const GlobalStyle = createGlobalStyle`
     html, body {
         min-width: 345px;
         width: 100%;
+        background-color: #111;
+        color: #fff;
     }
 
     body {
@@ -101,5 +103,27 @@ export const GlobalStyle = createGlobalStyle`
                 background: #111;
             }
         }
+    }
+
+    @media (min-width: 360px) {
+        :root {
+            --scale: 1;
+        }
+    }
+
+    @media (min-width: 768px) {
+        :root {
+            --scale: 1.2;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        :root {
+            --scale: 1.4;
+        }
+    }
+
+    p {
+        font-size: calc(1rem * var(--scale));
     }
 `

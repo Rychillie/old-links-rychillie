@@ -12,7 +12,15 @@ import * as S from "../styles/About"
 const SobrePage = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "rychillie.png" }) {
+      profile: file(relativePath: { eq: "profile_rychillie.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 400, maxHeight: 400, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      icon: file(relativePath: { eq: "rychillie.png" }) {
         childImageSharp {
           fluid(maxWidth: 240, maxHeight: 240, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -36,31 +44,37 @@ const SobrePage = () => {
             </div>
           </S.Nav>
           <S.ImageHeader>
-            <Img fluid={data.file.childImageSharp.fluid} />
+            <Img fluid={data.icon.childImageSharp.fluid} />
           </S.ImageHeader>
         </S.Container>
       </S.Header>
       <S.Content>
         <S.Container>
-          <h1>Este é o sobre</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-            mollitia doloremque, corporis ea repudiandae eius distinctio
-            nesciunt possimus dolorum! Odit voluptates quod quibusdam iste
-            saepe, delectus consequatur similique nulla quisquam?
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-            mollitia doloremque, corporis ea repudiandae eius distinctio
-            nesciunt possimus dolorum! Odit voluptates quod quibusdam iste
-            saepe, delectus consequatur similique nulla quisquam?
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-            mollitia doloremque, corporis ea repudiandae eius distinctio
-            nesciunt possimus dolorum! Odit voluptates quod quibusdam iste
-            saepe, delectus consequatur similique nulla quisquam?
-          </p>
+          <S.Apresentation>
+            <S.Image>
+              <div className="principal">
+                <Img fluid={data.profile.childImageSharp.fluid} />
+              </div>
+              <S.Before>
+                <Img fluid={data.profile.childImageSharp.fluid} />
+              </S.Before>
+            </S.Image>
+            <S.About>
+              <h1>
+                <span>Olá, meu nome é</span> Rychillie Umpirre de Oliveira
+              </h1>
+              <p>
+                Sou um jovem estudante interessado em tecnologia, games e
+                códigos. Sempre fui atrás de aprimorar meu conhecimento e buscar
+                o que é de mais atual, não importando se é conhecido ou não,
+                procurei sempre estar em meio a algo novo e diferente.
+              </p>
+              <p>
+                Meu maior desejo é fazer parte das coisas, é estar envolvido,
+                poder deixar meu nome na história é meu objetivo, ser conhecido!
+              </p>
+            </S.About>
+          </S.Apresentation>
         </S.Container>
       </S.Content>
     </Layout>
